@@ -1,12 +1,12 @@
 <!--Vf-page for administrator use.-->
 <apex:page controller="CountSheetCtrl" tabStyle="CountSheet__tab">
-  <apex:sectionHeader title="Inventory Count Sheet"/>
+  <apex:sectionHeader title="{!$Label.Count_Sheet_Header_Title}"/>
   <apex:form >
       <c:LoadingComp />
-    <apex:pageBlock mode="detail" title="Store">
+    <apex:pageBlock mode="detail" title="{!$Label.Store_Name}">
       <apex:pageBlockButtons >
         <!--Goes to the NewProduct vf-page.-->
-        <apex:commandButton value="New record" action="{!newRecord}"/>
+        <apex:commandButton value="{!$Label.New_Record}" action="{!newRecord}"/>
       </apex:pageBlockButtons>
       <apex:pageBlockTable id="recordTable" value="{!products}" var="product">
         <apex:column >
@@ -14,19 +14,20 @@
           <apex:commandLink onclick="if (!confirmDelete()) return false;"
                             id="delete" value="{!$Label.Delete_Label}" reRender="recordTable"
                             action="{!deleteRecord}" status="loadStatus">
-            <apex:param value="{!product.Id}" name="recordId" assignTo="{!recordId}"/>
+            <apex:param value="{!product.Id}" name="recordId" 
+                              assignTo="{!recordId}"/>
           </apex:commandLink>
         </apex:column>
-        <apex:column width="200" headerValue="Product">
+        <apex:column width="200" headerValue="{!$Label.Product_Column}">
           <!--View details of the product.-->
           <apex:outputLink target="_blank" value="/{!product.Id}">
             {!product.Name}
           </apex:outputLink>
         </apex:column>
-        <apex:column headerValue="Physical Count">
+        <apex:column headerValue="{!$Label.Physical_Count_Column}">
           <apex:outputField value="{!product.Quantity__c}"/>
         </apex:column>
-        <apex:column headerValue="Price">
+        <apex:column headerValue="{!$Label.Price_Column}">
           <apex:outputField value="{!product.Price__c}"/>
         </apex:column>
       </apex:pageBlockTable>
