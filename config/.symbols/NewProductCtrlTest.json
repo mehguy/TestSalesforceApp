@@ -1,0 +1,55 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "NewProductCtrlTest", 
+    "tableDeclaration": {
+        "type": "NewProductCtrlTest", 
+        "modifiers": [
+            "private", 
+            "testMethod"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 15, 
+            "line": 5
+        }, 
+        "name": "NewProductCtrlTest"
+    }, 
+    "key": "01p28000008z114AAA", 
+    "variables": [
+        {
+            "type": "NewProductCtrl", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 8
+            }, 
+            "name": "controller"
+        }
+    ], 
+    "id": "01p28000008z114AAA", 
+    "methods": [
+        {
+            "modifiers": [
+                "private", 
+                "static", 
+                "testMethod"
+            ], 
+            "name": "productTest", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 6
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}

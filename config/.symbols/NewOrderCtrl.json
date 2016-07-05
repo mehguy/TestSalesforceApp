@@ -1,0 +1,122 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "newContact", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 6
+            }, 
+            "type": "Contact"
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "newLineItem", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 23, 
+                "line": 7
+            }, 
+            "type": "Line_Item__c"
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "newOrder", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 19, 
+                "line": 8
+            }, 
+            "type": "Order__c"
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "recordId", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 13, 
+                "line": 9
+            }, 
+            "type": "Id"
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "selectedProduct", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 10
+            }, 
+            "type": "Merchandise__c"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "NewOrderCtrl", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 10, 
+                "line": 25
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": null, 
+    "name": "NewOrderCtrl", 
+    "tableDeclaration": {
+        "type": "NewOrderCtrl", 
+        "modifiers": [
+            "public"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 14, 
+            "line": 4
+        }, 
+        "name": "NewOrderCtrl"
+    }, 
+    "key": "01p28000008yg7uAAA", 
+    "variables": [], 
+    "id": "01p28000008yg7uAAA", 
+    "methods": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "save", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 14
+            }, 
+            "returnType": "PageReference", 
+            "type": null
+        }
+    ]
+}

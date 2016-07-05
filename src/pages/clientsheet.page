@@ -1,0 +1,30 @@
+<!--Vf-page for client use.-->
+<apex:page controller="CountSheetCtrl" tabStyle="clientsheet__tab">
+  <apex:sectionHeader title="Store"/>
+  <apex:form >
+    <c:LoadingComp />
+    <apex:pageBlock mode="detail" title="Merchandise">
+      <apex:pageBlockTable id="recordTable" value="{!products}" var="product">
+        <apex:column >
+          <!--"Make order". Goes to the NewOrder vf-page.-->
+          <apex:commandLink value="{!$Label.Make_Order_Lab}" action="{!newOrder}"
+                            id="neworder" reRender="recordTable" status="loadStatus">
+            <apex:param value="{!product.Id}" name="recordId" assignTo="{!recordId}"/>
+          </apex:commandLink>
+        </apex:column>
+        <apex:column width="200" headerValue="Product">
+          <!--View details of the product.-->
+          <apex:outputLink target="_blank" value="/{!product.Id}" >
+            {!product.Name}
+          </apex:outputLink>
+        </apex:column>
+        <apex:column headerValue="Physical Count">
+          <apex:outputField value="{!product.Quantity__c}"/>
+        </apex:column>
+        <apex:column headerValue="Price">
+          <apex:outputField value="{!product.Price__c}"/>
+        </apex:column>
+      </apex:pageBlockTable>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

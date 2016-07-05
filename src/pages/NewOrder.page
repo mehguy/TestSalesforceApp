@@ -1,0 +1,36 @@
+<!--Vf-page for ordering a product.-->
+<apex:page controller="NewOrderCtrl">
+    <apex:form >
+        <c:LoadingComp />
+        <apex:pageMessages id="messages"/>
+        <apex:pageBlock title="{!$Label.Order_Name} - {!selectedProduct.Name}"  mode="edit">
+            <apex:pageBlockButtons >
+                <!--Saves the order.-->
+                <apex:commandButton status="loadStatus" action="{!save}" value="Save"
+                                    reRender="messages" />
+            </apex:pageBlockButtons>
+			<apex:pageBlockSection title="Enter new order" columns="2">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="First Name"/>
+                    <apex:inputField required="true"  value="{!newContact.FirstName}" 
+                        id="firstname"/>
+                </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Last Name"/>
+                    <apex:inputField required="true"  value="{!newContact.LastName}" 
+                        id="lastname"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Email"/>
+                    <apex:inputField required="true" label="Email" value="{!newContact.Email}"
+                                     id="email"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Quantity"/>
+                    <apex:inputField label="Quantity" value="{!newLineItem.Quantity__c}"
+                                     id="Quantity"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

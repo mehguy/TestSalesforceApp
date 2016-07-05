@@ -1,0 +1,35 @@
+<!--Vf-page for administrator use.-->
+<apex:page controller="CountSheetCtrl" tabStyle="CountSheet__tab">
+  <apex:sectionHeader title="Inventory Count Sheet"/>
+  <apex:form >
+      <c:LoadingComp />
+    <apex:pageBlock mode="detail" title="Store">
+      <apex:pageBlockButtons >
+        <!--Goes to the NewProduct vf-page.-->
+        <apex:commandButton value="New record" action="{!newRecord}"/>
+      </apex:pageBlockButtons>
+      <apex:pageBlockTable id="recordTable" value="{!products}" var="product">
+        <apex:column >
+          <!--Deletes the record.-->
+          <apex:commandLink onclick="if (!confirmDelete()) return false;"
+                            id="delete" value="{!$Label.Delete_Label}" reRender="recordTable"
+                            action="{!deleteRecord}" status="loadStatus">
+            <apex:param value="{!product.Id}" name="recordId" assignTo="{!recordId}"/>
+          </apex:commandLink>
+        </apex:column>
+        <apex:column width="200" headerValue="Product">
+          <!--View details of the product.-->
+          <apex:outputLink target="_blank" value="/{!product.Id}">
+            {!product.Name}
+          </apex:outputLink>
+        </apex:column>
+        <apex:column headerValue="Physical Count">
+          <apex:outputField value="{!product.Quantity__c}"/>
+        </apex:column>
+        <apex:column headerValue="Price">
+          <apex:outputField value="{!product.Price__c}"/>
+        </apex:column>
+      </apex:pageBlockTable>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

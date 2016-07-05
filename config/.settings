@@ -1,0 +1,24 @@
+{
+    "username": "name@slt.com", 
+    "project_name": "TechStore", 
+    "org_url": "", 
+    "namespace": "", 
+    "metadata_container": "1dc28000000jZCEAA2", 
+    "environment": "production", 
+    "workspace": "D:\\Development", 
+    "id": "RYWWU2EB2VLOQP8CH7HYWGG3Z1BIBEKG", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "CustomApplication", 
+        "CustomLabels", 
+        "CustomObject", 
+        "CustomTab", 
+        "Layout", 
+        "Profile", 
+        "StaticResource", 
+        "Workflow"
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "newRecord", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 27, 
+                "line": 6
+            }, 
+            "type": "Merchandise__c"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "NewProductCtrl", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 12, 
+                "line": 24
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": null, 
+    "name": "NewProductCtrl", 
+    "tableDeclaration": {
+        "type": "NewProductCtrl", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 4
+        }, 
+        "name": "NewProductCtrl"
+    }, 
+    "key": "01p28000008ybCaAAI", 
+    "variables": [
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 30, 
+                "line": 10
+            }, 
+            "name": "nameCheck"
+        }
+    ], 
+    "id": "01p28000008ybCaAAI", 
+    "methods": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "save", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 9
+            }, 
+            "returnType": "PageReference", 
+            "type": null
+        }
+    ]
+}

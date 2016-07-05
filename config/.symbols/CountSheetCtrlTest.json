@@ -1,0 +1,65 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "CountSheetCtrlTest", 
+    "tableDeclaration": {
+        "type": "CountSheetCtrlTest", 
+        "modifiers": [
+            "public", 
+            "testMethod"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 14, 
+            "line": 5
+        }, 
+        "name": "CountSheetCtrlTest"
+    }, 
+    "key": "01p28000008yrPHAAY", 
+    "variables": [
+        {
+            "type": "Merchandise__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 7
+            }, 
+            "name": "testProduct"
+        }, 
+        {
+            "type": "CountSheetCtrl", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 11
+            }, 
+            "name": "prods"
+        }
+    ], 
+    "id": "01p28000008yrPHAAY", 
+    "methods": [
+        {
+            "modifiers": [
+                "private", 
+                "static", 
+                "testMethod"
+            ], 
+            "name": "productsTest", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 6
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}

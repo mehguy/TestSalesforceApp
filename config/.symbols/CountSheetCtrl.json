@@ -1,0 +1,140 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "recordId", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 9
+            }, 
+            "type": "Id"
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "products", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 33, 
+                "line": 11
+            }, 
+            "type": "LIST"
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public", 
+                "final"
+            ], 
+            "name": "PARAMETER_ID", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 32, 
+                "line": 7
+            }, 
+            "type": "String"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "CountSheetCtrl", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 12, 
+                "line": 19
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": null, 
+    "name": "CountSheetCtrl", 
+    "tableDeclaration": {
+        "type": "CountSheetCtrl", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 5
+        }, 
+        "name": "CountSheetCtrl"
+    }, 
+    "key": "01p28000008yQkjAAE", 
+    "variables": [
+        {
+            "type": "PageReference", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 23, 
+                "line": 37
+            }, 
+            "name": "result"
+        }
+    ], 
+    "id": "01p28000008yQkjAAE", 
+    "methods": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "deleteRecord", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 24
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "newRecord", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 31
+            }, 
+            "returnType": "PageReference", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "newOrder", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 36
+            }, 
+            "returnType": "PageReference", 
+            "type": null
+        }
+    ]
+}

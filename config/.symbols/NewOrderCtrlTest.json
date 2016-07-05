@@ -1,0 +1,65 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "NewOrderCtrlTest", 
+    "tableDeclaration": {
+        "type": "NewOrderCtrlTest", 
+        "modifiers": [
+            "public", 
+            "testMethod"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 14, 
+            "line": 5
+        }, 
+        "name": "NewOrderCtrlTest"
+    }, 
+    "key": "01p28000008z02rAAA", 
+    "variables": [
+        {
+            "type": "Merchandise__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 8
+            }, 
+            "name": "testProduct"
+        }, 
+        {
+            "type": "NewOrderCtrl", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 16, 
+                "line": 13
+            }, 
+            "name": "controller"
+        }
+    ], 
+    "id": "01p28000008z02rAAA", 
+    "methods": [
+        {
+            "modifiers": [
+                "private", 
+                "static", 
+                "testMethod"
+            ], 
+            "name": "orderTest", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 6
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}
