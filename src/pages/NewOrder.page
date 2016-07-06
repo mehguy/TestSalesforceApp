@@ -1,6 +1,9 @@
 <!--Vf-page for ordering a product.-->
 <apex:page controller="NewOrderCtrl">
-    <apex:form >
+<apex:includeScript value="{!URLFOR($Resource.JQuery, 'jquery.js')}"/>
+<!--Makes the form appear slowly.-->
+<apex:includeScript value="{!URLFOR($Resource.FadeIn, 'fadeIn.js')}"/>
+    <apex:form id="form" styleClass="fade">
         <c:LoadingComp />
         <apex:pageMessages id="messages"/>
         <apex:pageBlock title="{!$Label.Order_Name} - {!selectedProduct.Name}"  mode="edit">

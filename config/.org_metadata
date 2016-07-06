@@ -8925,6 +8925,30 @@
         "children": [
             {
                 "leaf": true, 
+                "title": "FadeIn", 
+                "checked": false, 
+                "id": "StaticResource.FadeIn", 
+                "text": "FadeIn", 
+                "level": 2, 
+                "isFolder": false, 
+                "children": [], 
+                "select": false, 
+                "cls": ""
+            }, 
+            {
+                "leaf": true, 
+                "title": "JQuery", 
+                "checked": false, 
+                "id": "StaticResource.JQuery", 
+                "text": "JQuery", 
+                "level": 2, 
+                "isFolder": false, 
+                "children": [], 
+                "select": false, 
+                "cls": ""
+            }, 
+            {
+                "leaf": true, 
                 "title": "NewStyles", 
                 "checked": false, 
                 "id": "StaticResource.NewStyles", 

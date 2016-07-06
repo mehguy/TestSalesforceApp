@@ -43,6 +43,8 @@
         <name>Layout</name>
     </types>
     <types>
+        <members>FadeIn</members>
+        <members>JQuery</members>
         <members>NewStyles</members>
         <name>StaticResource</name>
     </types>

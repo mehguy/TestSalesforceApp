@@ -1,7 +1,11 @@
 <!--Vf-page for administrator use.-->
 <apex:page controller="CountSheetCtrl" tabStyle="CountSheet__tab">
+<apex:stylesheet value="{!URLFOR($Resource.NewStyles, 'test.css')}" />
+<apex:includeScript value="{!URLFOR($Resource.JQuery, 'jquery.js')}"/>
+<!--Makes the form appear slowly.-->
+<apex:includeScript value="{!URLFOR($Resource.FadeIn, 'fadeIn.js')}"/>
   <apex:sectionHeader title="{!$Label.Count_Sheet_Header_Title}"/>
-  <apex:form >
+  <apex:form id="form" styleClass="fade">
       <c:LoadingComp />
     <apex:pageBlock mode="detail" title="{!$Label.Store_Name}">
       <apex:pageBlockButtons >
@@ -11,7 +15,7 @@
       <apex:pageBlockTable id="recordTable" value="{!products}" var="product">
         <apex:column >
           <!--Deletes the record.-->
-          <apex:commandLink onclick="if (!confirmDelete()) return false;"
+          <apex:commandLink styleClass="url_style_delete" onclick="if (!confirmDelete()) return false;"
                             id="delete" value="{!$Label.Delete_Label}" reRender="recordTable"
                             action="{!deleteRecord}" status="loadStatus">
             <apex:param value="{!product.Id}" name="recordId" 
@@ -20,17 +24,22 @@
         </apex:column>
         <apex:column width="200" headerValue="{!$Label.Product_Column}">
           <!--View details of the product.-->
-          <apex:outputLink target="_blank" value="/{!product.Id}">
+          <apex:outputLink styleClass="url_style_item" target="_blank" value="/{!product.Id}">
             {!product.Name}
           </apex:outputLink>
         </apex:column>
         <apex:column headerValue="{!$Label.Physical_Count_Column}">
-          <apex:outputField value="{!product.Quantity__c}"/>
+          <div class="outputfield_style">
+            <apex:outputField value="{!product.Quantity__c}"/>
+          </div>
         </apex:column>
         <apex:column headerValue="{!$Label.Price_Column}">
-          <apex:outputField value="{!product.Price__c}"/>
+          <div class="outputfield_style">
+            <apex:outputField styleClass="outputfield_style" value="{!product.Price__c}"/>
+          </div>
         </apex:column>
       </apex:pageBlockTable>
     </apex:pageBlock>
   </apex:form>
+  <div id="hello"/>
 </apex:page>

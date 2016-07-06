@@ -1,30 +1,38 @@
 <!--Vf-page for client use.-->
 <apex:page controller="CountSheetCtrl" tabStyle="clientsheet__tab">
+<apex:includeScript value="{!URLFOR($Resource.JQuery, 'jquery.js')}"/>
+<!--Makes the form appear slowly.-->
+<apex:includeScript value="{!URLFOR($Resource.FadeIn, 'fadeIn.js')}"/>
   <apex:sectionHeader title="{!$Label.Save_Label}"/>
-  <apex:form >
+  <apex:form id="form" styleClass="fade">
     <c:LoadingComp />
     <apex:pageBlock mode="detail" title="{!$Label.Merchandise_Label}">
       <apex:pageBlockTable id="recordTable" value="{!products}" var="product">
         <apex:column >
           <!--"Make order". Goes to the NewOrder vf-page.-->
-          <apex:commandLink value="{!$Label.Make_Order_Lab}" action="{!newOrder}"
+          <apex:commandLink styleClass="url_style_order" value="{!$Label.Make_Order_Lab}" action="{!newOrder}"
                             id="neworder" reRender="recordTable" status="loadStatus">
             <apex:param value="{!product.Id}" name="recordId" assignTo="{!recordId}"/>
           </apex:commandLink>
         </apex:column>
         <apex:column width="200" headerValue="{!$Label.Product_Column}">
           <!--View details of the product.-->
-          <apex:outputLink target="_blank" value="/{!product.Id}" >
+          <apex:outputLink styleClass="url_style_item" target="_blank" value="/{!product.Id}" >
             {!product.Name}
           </apex:outputLink>
         </apex:column>
         <apex:column headerValue="{!$Label.Physical_Count_Column}">
-          <apex:outputField value="{!product.Quantity__c}"/>
+          <div class="outputfield_style">
+            <apex:outputField value="{!product.Quantity__c}"/>
+          </div>
         </apex:column>
         <apex:column headerValue="{!$Label.Price_Column}">
-          <apex:outputField value="{!product.Price__c}"/>
+          <div class="outputfield_style">
+            <apex:outputField value="{!product.Price__c}"/>
+          </div>
         </apex:column>
       </apex:pageBlockTable>
     </apex:pageBlock>
   </apex:form>
+  <div id="hello"/>
 </apex:page>
